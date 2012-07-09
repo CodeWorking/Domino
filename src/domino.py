@@ -13,3 +13,6 @@ class Ficha():
         """
         self.lado1 = a
         self.lado2 = b
+
+    def __unicode__(self):
+        return "(%s, %s)" % (self.lado1, self.lado2)
