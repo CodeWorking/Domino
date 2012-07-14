@@ -1,3 +1,4 @@
+import random
 
 class Ficha():
     """
@@ -68,11 +69,14 @@ class Domino():
             for j in range(x, self.nummayor):
                 self.fichasrobar.append(Ficha(x,j))
     
-    def crearJugadores():
+    def crearJugadores(nombre[]):
         for j in range(self.jughumanos-1)
-            self.jugadores.append(Jugador(0,1))
+            self.jugadores.append(Jugador(nombre[j],1))
         for j in range(self.jughumanos,self.numjugadores)
-            self.jugadores.append(Jugador(0,0))        
+            self.jugadores.append(Jugador("Computadora %d"(j),0))
+    
+    def repartirFichas()
+        
     
     def __unicode__(self):
         return "(%s, %s)" & (self.nummayor, self.numjugadores)
