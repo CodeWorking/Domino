@@ -16,3 +16,10 @@ class Ficha():
 
     def __unicode__(self):
         return "(%s, %s)" % (self.lado1, self.lado2)
+
+
+
+
+class Tablero():
+    def __unicode__(self):
+        return "Tablero"
