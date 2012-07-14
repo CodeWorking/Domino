@@ -23,3 +23,27 @@ class Ficha():
 class Tablero():
     def __unicode__(self):
         return "Tablero"
+
+
+
+
+class Jugador():
+    """
+    """
+
+    def __init__(self, n,t):
+        """
+        Crear un Jugador
+        Arguments:
+        - `nombre`: El nombre del jugador
+        - `fichas`: Numero de fichas
+        - `tipo`  : Tipo de
+
+        """
+        self.nombre = n
+        self.fichas = []
+        self.tipo = t
+
+    def __unicode__(self):
+        return "(%s, %s, %s)" % (self.nombre, self.fichas, self.tipo)
+
